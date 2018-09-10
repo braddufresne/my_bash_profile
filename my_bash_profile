@@ -1,0 +1,12 @@
+alias l='ls --color=auto'
+alias gdiff='~/Documents/cshscripts/svngdiff'
+alias vnci='x11vnc -shared -display :0 -clip xinerama0 -cursor'
+alias cobuild='~/Documents/myscripts/cotherm-build.pl --debug'
+alias corun='~/Documents/myscripts/cotherm-run.sh'
+alias goto-current-project='. cd $(cat /home/btd/Documents/myscripts/current-project)'
+alias bashedit='nano ~/.bashrc && source ~/.bashrc'
+alias open='xdg-open'
+
+function c {
+	builtin cd "$@" && ls
+	}
